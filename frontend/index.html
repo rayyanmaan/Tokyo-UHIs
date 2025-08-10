@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UHI Analyzer</title>
+  <link rel="stylesheet" href="/frontend/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Urban Heat Island Analyzer</h1>
+    <form id="form">
+      <div class="row">
+        <input id="city" type="text" placeholder="Enter city (e.g., Tokyo)" required />
+        <input id="year" type="number" min="2001" max="2025" value="2023" />
+        <button type="submit">Analyze</button>
+      </div>
+    </form>
+    <div id="status"></div>
+    <div id="gallery" class="grid"></div>
+  </div>
+  <script src="/frontend/app.js"></script>
+</body>
+</html>
